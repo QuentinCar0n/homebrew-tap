@@ -1,6 +1,6 @@
 cask "multiclaude" do
-  version "1.7"
-  sha256 "edf20638f1820a50e2e467ca3dd93352f187b5f2cbddaf920aaab7787750c974"
+  version "1.7.1"
+  sha256 "7cd3cf5d6c863e45b02c82027d05ac1fa36b01967f54fc5d7d13da1b500a4731"
 
   url "https://github.com/QuentinCar0n/multiclaude/releases/download/v#{version}/MultiClaude-#{version}.zip"
   name "MultiClaude"
