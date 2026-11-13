@@ -1,6 +1,6 @@
 cask "multiclaude" do
-  version "1.7.1"
-  sha256 "7cd3cf5d6c863e45b02c82027d05ac1fa36b01967f54fc5d7d13da1b500a4731"
+  version "1.8"
+  sha256 "1479359d4f560d2fb439489b7c7c192bc86ce97827b570efc24721d02d3bc7ef"
 
   url "https://github.com/QuentinCar0n/multiclaude/releases/download/v#{version}/MultiClaude-#{version}.zip"
   name "MultiClaude"
@@ -15,6 +15,7 @@ cask "multiclaude" do
   depends_on macos: :sequoia
 
   app "MultiClaude.app"
+  binary "#{appdir}/MultiClaude.app/Contents/Helpers/multiclaude"
 
   # The app is ad hoc signed and not notarized, so Gatekeeper would block the first launch.
   postflight_steps do
