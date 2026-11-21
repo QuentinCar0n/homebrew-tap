@@ -1,0 +1,17 @@
+# QuentinCar0n Homebrew tap
+
+> A Homebrew tap (`quentincar0n/tap`) that installs macOS apps by Quentin Caron. It holds one cask, `multiclaude` (MultiClaude 1.11, macOS 15 or later), a menu bar app that runs several Claude desktop accounts side by side. Install with `brew install --cask quentincar0n/tap/multiclaude`.
+
+- The apps are ad hoc signed and not notarized by Apple, which is why they live in a personal tap instead of `homebrew/cask`.
+- Each cask removes the `com.apple.quarantine` attribute in a `postflight` step so macOS doesn't block the first launch.
+- The `multiclaude` cask also links the `multiclaude` command line tool onto the `PATH`.
+
+## Docs
+
+- [README](https://github.com/QuentinCar0n/homebrew-tap/blob/main/README.md): casks, install, update, uninstall, why a personal tap, FAQ
+- [multiclaude cask](https://github.com/QuentinCar0n/homebrew-tap/blob/main/Casks/multiclaude.rb): version, download URL, requirements, postflight, zap
+
+## Optional
+
+- [MultiClaude](https://github.com/QuentinCar0n/multiclaude): source, features and command line tool of the app this tap installs
+- [Cocaine releases](https://github.com/QuentinCar0n/cocaine-releases): another macOS menu bar app by the same author, distributed as a zip (not in this tap)
