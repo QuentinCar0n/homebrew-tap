@@ -2,9 +2,14 @@
 
 This is a Homebrew tap (a third-party cask repository) that installs macOS apps by Quentin Caron with `brew`. It currently holds one cask, `multiclaude`, for [MultiClaude](https://github.com/QuentinCar0n/multiclaude), a menu bar app that runs several Claude desktop accounts side by side. The casks live here instead of in the official `homebrew/cask` repository because the apps are ad hoc signed and not notarized by Apple.
 
+## Quick start
+
 ```bash
-brew install --cask quentincar0n/tap/multiclaude
+brew tap quentincar0n/tap
+brew install --cask multiclaude
 ```
+
+Then open MultiClaude from Applications and click the ✳ icon in the menu bar. The `multiclaude` command is on your `PATH` too. MultiClaude needs the [Claude desktop app](https://claude.ai/download) in `/Applications`.
 
 ## At a glance
 
